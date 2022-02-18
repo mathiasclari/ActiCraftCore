@@ -1,6 +1,8 @@
 package com.metaxcrew.acticoreplus;
 
 import com.metaxcrew.acticoreplus.License.AdvancedLicense;
+import com.metaxcrew.acticoreplus.Listeners.ChatSystem;
+import com.metaxcrew.acticoreplus.Listeners.JoinMessageListener;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -8,10 +10,15 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.awt.*;
 
+
 public final class ActiCorePlus extends JavaPlugin {
+
+    public static ActiCorePlus instance;
 
     @Override
     public void onEnable() {
+
+        instance = this;
 
 
         reloadConfig();
@@ -40,6 +47,8 @@ public final class ActiCorePlus extends JavaPlugin {
             //getCommand("shop").setExecutor(new ""());
             //Events
             //getServer().getPluginManager().registerEvents(new MenuGui(), this);
+            getServer().getPluginManager().registerEvents(new JoinMessageListener(), this);
+            getServer().getPluginManager().registerEvents(new ChatSystem(), this);
 
 
             //Placeholders

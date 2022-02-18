@@ -3,6 +3,4 @@ version: '${project.version}'
 main: com.metaxcrew.acticoreplus.ActiCorePlus
 api-version: 1.18
 authors: [ MatLabs ]
-depend:
-  - PlaceholderAPI
-  - Vault
+depend: [PlaceholderAPI]
