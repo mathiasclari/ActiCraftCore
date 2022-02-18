@@ -28,6 +28,7 @@ public class GmGUI implements CommandExecutor, Listener {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
+            if (player.hasPermission("acti.gmgui")){
 
 
             Inventory GMSLGUI = Bukkit.createInventory(null, 9, ChatColor.of(new Color(69, 72, 77)) + "Gamemode Selector");
@@ -100,7 +101,7 @@ public class GmGUI implements CommandExecutor, Listener {
             player.openInventory(GMSLGUI);
 
 
-        }
+        }}
         return false;}
 
 
@@ -111,38 +112,42 @@ public class GmGUI implements CommandExecutor, Listener {
         if(event.getView().getTitle().equalsIgnoreCase(ChatColor.of(new Color(69, 72, 77)) + "Gamemode Selector") && event.getCurrentItem() != null) {
 
             if (event.getCurrentItem().getType() == Material.RED_STAINED_GLASS) {
-                if (event.getClick().equals(ClickType.RIGHT == ClickType.LEFT)) {
+                if (event.getClick().equals(ClickType.RIGHT)||event.getClick().equals(ClickType.LEFT)) {
                     ItemMeta meta = event.getCurrentItem().getItemMeta();
                     event.getWhoClicked().setGameMode(GameMode.ADVENTURE);
                     event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(169, 45, 81)) + "ADVENTURE");
+                    event.getWhoClicked().closeInventory();
                 }
                 else{
                     event.setCancelled(true);}}
 
                 if (event.getCurrentItem().getType() == Material.ORANGE_STAINED_GLASS) {
-                    if (event.getClick().equals(ClickType.RIGHT == ClickType.LEFT)) {
+                    if (event.getClick().equals(ClickType.RIGHT)||event.getClick().equals(ClickType.LEFT)) {
                         ItemMeta meta = event.getCurrentItem().getItemMeta();
                         event.getWhoClicked().setGameMode(GameMode.CREATIVE);
                         event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(169, 45, 81)) + "CREATIVE");
+                        event.getWhoClicked().closeInventory();
                     }
                     else{
                         event.setCancelled(true);}}
 
 
                 if (event.getCurrentItem().getType() == Material.LIME_STAINED_GLASS) {
-                        if (event.getClick().equals(ClickType.RIGHT == ClickType.LEFT)) {
+                        if (event.getClick().equals(ClickType.RIGHT)||event.getClick().equals(ClickType.LEFT)) {
                             ItemMeta meta = event.getCurrentItem().getItemMeta();
                             event.getWhoClicked().setGameMode(GameMode.SURVIVAL);
                             event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(169, 45, 81)) + "SURVIVAL");
+                            event.getWhoClicked().closeInventory();
                         }else{
                     event.setCancelled(true);}}
 
 
             if (event.getCurrentItem().getType() == Material.LIGHT_GRAY_STAINED_GLASS) {
-                if (event.getClick().equals(ClickType.RIGHT == ClickType.LEFT)) {
+                if (event.getClick().equals(ClickType.RIGHT )||event.getClick().equals(ClickType.LEFT)) {
                     ItemMeta meta = event.getCurrentItem().getItemMeta();
                     event.getWhoClicked().setGameMode(GameMode.SPECTATOR);
                     event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(169, 45, 81)) + "SPECTATOR");
+                    event.getWhoClicked().closeInventory();
                 }
             }
 
