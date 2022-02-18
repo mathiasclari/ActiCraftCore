@@ -16,13 +16,13 @@ public class JoinMessageListener implements Listener {
     @EventHandler
     private void onJoin(PlayerJoinEvent e){
         Player p = e.getPlayer();
-        e.setJoinMessage(ChatColor.of(new Color(153, 4, 56))+"» "+ChatColor.of(new Color(69, 72, 77))+ p.getDisplayName()+ ChatColor.of(new Color(69, 72, 77))+ " has joined the game!");
+        e.setJoinMessage(ChatColor.of(new Color(153, 4, 56))+"» "+ChatColor.of(new Color(130, 139, 147))+ p.getDisplayName()+ ChatColor.of(new Color(69, 72, 77))+ " has joined the game!");
     }
 
     @EventHandler
     private void onLeave(PlayerQuitEvent e1){
         Player p = e1.getPlayer();
-        e1.setQuitMessage(ChatColor.of(new Color(153, 4, 56))+"» "+ChatColor.of(new Color(69, 72, 77))+ p.getDisplayName()+ ChatColor.of(new Color(69, 72, 77))+ " has left the game!");
+        e1.setQuitMessage(ChatColor.of(new Color(153, 4, 56))+"» "+ChatColor.of(new Color(130, 139, 147))+ p.getDisplayName()+ ChatColor.of(new Color(69, 72, 77))+ " has left the game!");
     }
 }
 

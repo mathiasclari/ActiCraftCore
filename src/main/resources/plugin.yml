@@ -4,3 +4,8 @@ main: com.metaxcrew.acticoreplus.ActiCorePlus
 api-version: 1.18
 authors: [ MatLabs ]
 depend: [PlaceholderAPI]
+
+commands:
+  gm:
+    description: GUI
+    aliases: [gmc, gms, gmsp, gma, gmgui, gamemode]

@@ -16,7 +16,7 @@ public class ChatSystem implements Listener {
 
     public void onChat(AsyncPlayerChatEvent event){
 
-        String format = PlaceholderAPI.setPlaceholders(event.getPlayer(), "%vault_prefix% %player_displayname% "+ChatColor.of(new Color(169, 45, 81))+"» " +ChatColor.of(new Color(130, 139, 147))+ event.getMessage());
+        String format = PlaceholderAPI.setPlaceholders(event.getPlayer(), "%vault_prefix%%player_displayname% "+ChatColor.of(new Color(169, 45, 81))+"» " +ChatColor.of(new Color(130, 139, 147))+ event.getMessage());
 
         event.setFormat(ChatColor.translateAlternateColorCodes('&', format));
         //event.setFormat(format);

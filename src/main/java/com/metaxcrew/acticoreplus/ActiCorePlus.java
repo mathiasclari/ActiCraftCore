@@ -1,5 +1,6 @@
 package com.metaxcrew.acticoreplus;
 
+import com.metaxcrew.acticoreplus.GUIs.GmGUI;
 import com.metaxcrew.acticoreplus.License.AdvancedLicense;
 import com.metaxcrew.acticoreplus.Listeners.ChatSystem;
 import com.metaxcrew.acticoreplus.Listeners.JoinMessageListener;
@@ -45,10 +46,12 @@ public final class ActiCorePlus extends JavaPlugin {
 
             //Commands
             //getCommand("shop").setExecutor(new ""());
+            getCommand("gmgui").setExecutor(new GmGUI());
             //Events
             //getServer().getPluginManager().registerEvents(new MenuGui(), this);
             getServer().getPluginManager().registerEvents(new JoinMessageListener(), this);
             getServer().getPluginManager().registerEvents(new ChatSystem(), this);
+            getServer().getPluginManager().registerEvents(new GmGUI(), this);
 
 
             //Placeholders
