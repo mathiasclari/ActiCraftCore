@@ -47,7 +47,7 @@ public final class ActiCorePlus extends JavaPlugin {
 
             //Commands GUI
             //getCommand("shop").setExecutor(new ""());
-            getCommand("gmgui").setExecutor(new GmGUI());
+            getCommand("gm").setExecutor(new GmGUI());
 
             //Commands
             getCommand("faq").setExecutor(new FaqCommand());
