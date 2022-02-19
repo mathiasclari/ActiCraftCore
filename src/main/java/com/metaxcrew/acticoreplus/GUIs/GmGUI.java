@@ -101,7 +101,9 @@ public class GmGUI implements CommandExecutor, Listener {
             player.openInventory(GMSLGUI);
 
 
-        }}
+        }else{
+                player.sendMessage(ChatColor.of(new Color(169, 45, 81)) + "You do not have required permissions to use this command!");
+            }}
         return false;}
 
 

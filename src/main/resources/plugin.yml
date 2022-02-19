@@ -9,3 +9,6 @@ commands:
   gm:
     description: GUI
     aliases: [gmc, gms, gmsp, gma, gmgui, gamemode]
+    faq:
+      aliases: [ FAQ ]
+      description: Frequently asked questions

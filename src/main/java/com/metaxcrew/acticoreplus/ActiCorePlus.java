@@ -1,5 +1,6 @@
 package com.metaxcrew.acticoreplus;
 
+import com.metaxcrew.acticoreplus.Commands.FaqCommand;
 import com.metaxcrew.acticoreplus.GUIs.GmGUI;
 import com.metaxcrew.acticoreplus.License.AdvancedLicense;
 import com.metaxcrew.acticoreplus.Listeners.ChatSystem;
@@ -44,9 +45,13 @@ public final class ActiCorePlus extends JavaPlugin {
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(0, 141, 183))+"");
             Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[]====================================================[]");
 
-            //Commands
+            //Commands GUI
             //getCommand("shop").setExecutor(new ""());
             getCommand("gmgui").setExecutor(new GmGUI());
+
+            //Commands
+            getCommand("faq").setExecutor(new FaqCommand());
+
             //Events
             //getServer().getPluginManager().registerEvents(new MenuGui(), this);
             getServer().getPluginManager().registerEvents(new JoinMessageListener(), this);
