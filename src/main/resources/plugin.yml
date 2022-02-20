@@ -9,6 +9,9 @@ commands:
   gm:
     description: GUI
     aliases: [gmc, gms, gmsp, gma, gmgui, gamemode]
+  time:
+    description: GUI
+    aliases: [ tm, time, day, night, tmgui]
   faq:
     aliases: [ FAQ ]
     description: Frequently asked questions

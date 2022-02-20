@@ -2,6 +2,7 @@ package com.metaxcrew.acticoreplus;
 
 import com.metaxcrew.acticoreplus.Commands.FaqCommand;
 import com.metaxcrew.acticoreplus.GUIs.GmGUI;
+import com.metaxcrew.acticoreplus.GUIs.TimeGUI;
 import com.metaxcrew.acticoreplus.License.AdvancedLicense;
 import com.metaxcrew.acticoreplus.Listeners.ChatSystem;
 import com.metaxcrew.acticoreplus.Listeners.JoinMessageListener;
@@ -48,6 +49,7 @@ public final class ActiCorePlus extends JavaPlugin {
             //Commands GUI
             //getCommand("shop").setExecutor(new ""());
             getCommand("gm").setExecutor(new GmGUI());
+            getCommand("time").setExecutor(new TimeGUI());
 
             //Commands
             getCommand("faq").setExecutor(new FaqCommand());
@@ -57,6 +59,7 @@ public final class ActiCorePlus extends JavaPlugin {
             getServer().getPluginManager().registerEvents(new JoinMessageListener(), this);
             getServer().getPluginManager().registerEvents(new ChatSystem(), this);
             getServer().getPluginManager().registerEvents(new GmGUI(), this);
+            getServer().getPluginManager().registerEvents(new TimeGUI(), this);
 
 
             //Placeholders
