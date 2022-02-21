@@ -32,7 +32,7 @@ public final class ActiCorePlus extends JavaPlugin {
         AdvancedLicense.ValidationType vt = new AdvancedLicense(this.getConfig().getString("license"), "https://mathiasclari.xyz/license/verify.php", this).isValid();
         if(vt == AdvancedLicense.ValidationType.VALID) {
 
-            Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[]=====================<" + ChatColor.of(new Color(137, 41, 255)) + ChatColor.BOLD + "MetaxCrew" + ChatColor.GRAY + ">=====================[]");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[]=====================<" + ChatColor.of(new Color(169, 45, 81)) + ChatColor.BOLD + "MetaxCrew" + ChatColor.GRAY + ">=====================[]");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(0, 141, 183))+"");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Plugin:" + ChatColor.of(new Color(0, 141, 183)) + " ActiCorePlus");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Developer:" + ChatColor.of(new Color(0, 141, 183)) + " Mat");
@@ -69,7 +69,7 @@ public final class ActiCorePlus extends JavaPlugin {
 // licenca narobe
 
             //Startup
-            Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[]=====================<" + ChatColor.of(new Color(137, 41, 255)) + ChatColor.BOLD + "ActiCorePlus" + ChatColor.GRAY + ">=====================[]");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[]=====================<" + ChatColor.of(new Color(169, 45, 81)) + ChatColor.BOLD + "ActiCorePlus" + ChatColor.GRAY + ">=====================[]");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(0, 141, 183))+"");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Plugin:" + ChatColor.of(new Color(0, 141, 183)) + " DeluxeShop");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Developer:" + ChatColor.of(new Color(0, 141, 183)) + " Mat");
