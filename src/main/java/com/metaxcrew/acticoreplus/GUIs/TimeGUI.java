@@ -99,7 +99,7 @@ public class TimeGUI implements CommandExecutor, Listener {
                 if (event.getClick().equals(ClickType.RIGHT) || event.getClick().equals(ClickType.LEFT)) {
                     ItemMeta meta = event.getCurrentItem().getItemMeta();
                     event.getWhoClicked().getWorld().setTime(0);
-                    event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed world time to: " + ChatColor.of(new Color(169, 45, 81)) + "DAY");
+                    event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed world time to: " + ChatColor.of(new Color(0, 141, 183)) + "DAY");
                     event.getWhoClicked().closeInventory();
                 } else {
                     event.setCancelled(true);
@@ -110,7 +110,7 @@ public class TimeGUI implements CommandExecutor, Listener {
                 if (event.getClick().equals(ClickType.RIGHT) || event.getClick().equals(ClickType.LEFT)) {
                     ItemMeta meta = event.getCurrentItem().getItemMeta();
                     event.getWhoClicked().getWorld().setTime(18000);
-                    event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed world time to: " + ChatColor.of(new Color(169, 45, 81)) + "NIGHT");
+                    event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed world time to: " + ChatColor.of(new Color(0, 141, 183)) + "NIGHT");
                     event.getWhoClicked().closeInventory();
                 } else {
                     event.setCancelled(true);

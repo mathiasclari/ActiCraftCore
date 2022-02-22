@@ -117,7 +117,7 @@ public class GmGUI implements CommandExecutor, Listener {
                 if (event.getClick().equals(ClickType.RIGHT)||event.getClick().equals(ClickType.LEFT)) {
                     ItemMeta meta = event.getCurrentItem().getItemMeta();
                     event.getWhoClicked().setGameMode(GameMode.ADVENTURE);
-                    event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(169, 45, 81)) + "ADVENTURE");
+                    event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(0, 141, 183)) + "ADVENTURE");
                     event.getWhoClicked().closeInventory();
                 }
                 else{
@@ -127,7 +127,7 @@ public class GmGUI implements CommandExecutor, Listener {
                     if (event.getClick().equals(ClickType.RIGHT)||event.getClick().equals(ClickType.LEFT)) {
                         ItemMeta meta = event.getCurrentItem().getItemMeta();
                         event.getWhoClicked().setGameMode(GameMode.CREATIVE);
-                        event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(169, 45, 81)) + "CREATIVE");
+                        event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(0, 141, 183)) + "CREATIVE");
                         event.getWhoClicked().closeInventory();
                     }
                     else{
@@ -138,7 +138,7 @@ public class GmGUI implements CommandExecutor, Listener {
                         if (event.getClick().equals(ClickType.RIGHT)||event.getClick().equals(ClickType.LEFT)) {
                             ItemMeta meta = event.getCurrentItem().getItemMeta();
                             event.getWhoClicked().setGameMode(GameMode.SURVIVAL);
-                            event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(169, 45, 81)) + "SURVIVAL");
+                            event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(0, 141, 183)) + "SURVIVAL");
                             event.getWhoClicked().closeInventory();
                         }else{
                     event.setCancelled(true);}}
@@ -148,7 +148,7 @@ public class GmGUI implements CommandExecutor, Listener {
                 if (event.getClick().equals(ClickType.RIGHT )||event.getClick().equals(ClickType.LEFT)) {
                     ItemMeta meta = event.getCurrentItem().getItemMeta();
                     event.getWhoClicked().setGameMode(GameMode.SPECTATOR);
-                    event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(169, 45, 81)) + "SPECTATOR");
+                    event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(0, 141, 183)) + "SPECTATOR");
                     event.getWhoClicked().closeInventory();
                 }
             }
