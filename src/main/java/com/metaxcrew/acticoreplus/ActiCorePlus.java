@@ -1,10 +1,11 @@
 package com.metaxcrew.acticoreplus;
 
 import com.metaxcrew.acticoreplus.Commands.FaqCommand;
+import com.metaxcrew.acticoreplus.Commands.FlyCommand;
 import com.metaxcrew.acticoreplus.GUIs.GmGUI;
 import com.metaxcrew.acticoreplus.GUIs.TimeGUI;
 import com.metaxcrew.acticoreplus.License.AdvancedLicense;
-import com.metaxcrew.acticoreplus.Listeners.ChatSystem;
+//import com.metaxcrew.acticoreplus.Listeners.ChatSystem;
 import com.metaxcrew.acticoreplus.Listeners.JoinMessageListener;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
@@ -53,11 +54,12 @@ public final class ActiCorePlus extends JavaPlugin {
 
             //Commands
             getCommand("faq").setExecutor(new FaqCommand());
+            getCommand("fly").setExecutor(new FlyCommand());
 
             //Events
             //getServer().getPluginManager().registerEvents(new MenuGui(), this);
             getServer().getPluginManager().registerEvents(new JoinMessageListener(), this);
-            getServer().getPluginManager().registerEvents(new ChatSystem(), this);
+            //getServer().getPluginManager().registerEvents(new ChatSystem(), this);
             getServer().getPluginManager().registerEvents(new GmGUI(), this);
             getServer().getPluginManager().registerEvents(new TimeGUI(), this);
 

@@ -1,5 +1,5 @@
 package com.metaxcrew.acticoreplus.Listeners;
-
+/*
 import jdk.vm.ci.code.ValueUtil;
 import me.clip.placeholderapi.PlaceholderAPI;
 import net.md_5.bungee.api.ChatColor;
@@ -22,3 +22,4 @@ public class ChatSystem implements Listener {
         //event.setFormat(format);
     }
 }
+*/
