@@ -45,9 +45,9 @@ public class TimeGUI implements CommandExecutor, Listener {
                 day.setItemMeta(day_meta);
 
                 ItemMeta night_meta = night.getItemMeta();
-                night_meta.setDisplayName(ChatColor.of(new Color(54, 45, 179)) + "NIGHT");
+                night_meta.setDisplayName(ChatColor.of(new Color(54, 45, 179)) + "MIDNIGHT");
                 ArrayList<String> night_lore = new ArrayList<>();
-                night_lore.add(ChatColor.of(new Color(130, 139, 147)) + "Change world time to night!");
+                night_lore.add(ChatColor.of(new Color(130, 139, 147)) + "Change world time to midnight!");
                 night_meta.setLore(night_lore);
                 night.setItemMeta(night_meta);
 
@@ -110,7 +110,7 @@ public class TimeGUI implements CommandExecutor, Listener {
                 if (event.getClick().equals(ClickType.RIGHT) || event.getClick().equals(ClickType.LEFT)) {
                     ItemMeta meta = event.getCurrentItem().getItemMeta();
                     event.getWhoClicked().getWorld().setTime(18000);
-                    event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed world time to: " + ChatColor.of(new Color(0, 141, 183)) + "NIGHT");
+                    event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed world time to: " + ChatColor.of(new Color(0, 141, 183)) + "MIDNIGHT");
                     event.getWhoClicked().closeInventory();
                 } else {
                     event.setCancelled(true);
