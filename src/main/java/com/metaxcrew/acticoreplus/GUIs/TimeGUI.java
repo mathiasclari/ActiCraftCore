@@ -92,10 +92,10 @@ public class TimeGUI implements CommandExecutor, Listener {
             language.setItemMeta(langhead);*/
 
                 //Design
-                TIMESGUI.setItem(2, morning);
-                TIMESGUI.setItem(6, night);
-                TIMESGUI.setItem(4, day);
-                TIMESGUI.setItem(8, midnight);
+                TIMESGUI.setItem(1, morning);
+                TIMESGUI.setItem(7, night);
+                TIMESGUI.setItem(3, day);
+                TIMESGUI.setItem(5, midnight);
 
                 player.openInventory(TIMESGUI);
 
@@ -137,7 +137,7 @@ public class TimeGUI implements CommandExecutor, Listener {
             if (event.getCurrentItem().getType() == Material.LIGHT_BLUE_STAINED_GLASS) {
                 if (event.getClick().equals(ClickType.RIGHT) || event.getClick().equals(ClickType.LEFT)) {
                     ItemMeta meta = event.getCurrentItem().getItemMeta();
-                    event.getWhoClicked().getWorld().setTime(1000);
+                    event.getWhoClicked().getWorld().setTime(6000);
                     event.getWhoClicked().sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed world time to: " + ChatColor.of(new Color(0, 141, 183)) + "DAY");
                     event.getWhoClicked().closeInventory();
                 } else {
