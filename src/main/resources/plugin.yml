@@ -8,7 +8,7 @@ depend: [PlaceholderAPI]
 commands:
   gm:
     description: GUI
-    aliases: [gmc, gms, gmsp, gma, gmgui, gamemode]
+    aliases: [gma, gmgui, gamemode]
   time:
     description: GUI
     aliases: [ tm, time, day, night, tmgui]
@@ -18,3 +18,15 @@ commands:
   fly:
     aliases: [flight,flyon]
     description: Fly
+  gmc:
+    aliases: [gm1,gamemode 1]
+    description: gmc
+  gms:
+    aliases: [ gm0,gamemode 0 ]
+    description: gms
+  gma:
+    aliases: [ gm4,gamemode 4 ]
+    description: gma
+  gmsp:
+    aliases: [ gm3,gamemode 3 ]
+    description: gmsp

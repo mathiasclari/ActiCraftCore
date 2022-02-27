@@ -39,21 +39,21 @@ public class TimeGUI implements CommandExecutor, Listener {
 
 
                 ItemMeta morning_meta = morning.getItemMeta();
-                morning_meta.setDisplayName(ChatColor.of(new Color(241, 152, 35)) + "MORNING");
+                morning_meta.setDisplayName(ChatColor.of(new Color(241, 152, 35)) + "SUNRISE");
                 ArrayList<String> morning_lore = new ArrayList<>();
                 morning_lore.add(ChatColor.of(new Color(130, 139, 147)) + "Change world time to morning!");
                 morning_meta.setLore(morning_lore);
                 morning.setItemMeta(morning_meta);
 
                 ItemMeta day_meta = day.getItemMeta();
-                day_meta.setDisplayName(ChatColor.of(new Color(241, 152, 35)) + "Day");
+                day_meta.setDisplayName(ChatColor.of(new Color(241, 152, 35)) + "DAY");
                 ArrayList<String> day_lore = new ArrayList<>();
                 day_lore.add(ChatColor.of(new Color(130, 139, 147)) + "Change world time to day!");
                 day_meta.setLore(day_lore);
                 day.setItemMeta(day_meta);
 
                 ItemMeta night_meta = night.getItemMeta();
-                night_meta.setDisplayName(ChatColor.of(new Color(54, 45, 179)) + "NIGHT");
+                night_meta.setDisplayName(ChatColor.of(new Color(54, 45, 179)) + "SUNSET");
                 ArrayList<String> night_lore = new ArrayList<>();
                 night_lore.add(ChatColor.of(new Color(130, 139, 147)) + "Change world time to midnight!");
                 night_meta.setLore(night_lore);

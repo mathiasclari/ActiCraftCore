@@ -1,8 +1,8 @@
 package com.metaxcrew.acticoreplus;
 
-import com.metaxcrew.acticoreplus.Commands.FaqCommand;
-import com.metaxcrew.acticoreplus.Commands.FlyCommand;
+import com.metaxcrew.acticoreplus.Commands.*;
 import com.metaxcrew.acticoreplus.Events.NoBreakEvent;
+import com.metaxcrew.acticoreplus.Events.NoPlaceEvent;
 import com.metaxcrew.acticoreplus.GUIs.GmGUI;
 import com.metaxcrew.acticoreplus.GUIs.TimeGUI;
 import com.metaxcrew.acticoreplus.License.AdvancedLicense;
@@ -56,14 +56,17 @@ public final class ActiCorePlus extends JavaPlugin {
             //Commands
             getCommand("faq").setExecutor(new FaqCommand());
             getCommand("fly").setExecutor(new FlyCommand());
+            getCommand("gmc").setExecutor(new CreativeCommand());
+            getCommand("gms").setExecutor(new SurvivalCommand());
+            getCommand("gmsp").setExecutor(new SpectatorCommand());
+            getCommand("gma").setExecutor(new AdventureCommand());
 
             //Events
-            //getServer().getPluginManager().registerEvents(new MenuGui(), this);
             getServer().getPluginManager().registerEvents(new JoinMessageListener(), this);
             getServer().getPluginManager().registerEvents(new NoBreakEvent(), this);
-            //getServer().getPluginManager().registerEvents(new ChatSystem(), this);
             getServer().getPluginManager().registerEvents(new GmGUI(), this);
             getServer().getPluginManager().registerEvents(new TimeGUI(), this);
+            getServer().getPluginManager().registerEvents(new NoPlaceEvent(), this);
 
 
             //Placeholders
