@@ -2,6 +2,7 @@ package com.metaxcrew.acticoreplus;
 
 import com.metaxcrew.acticoreplus.Commands.FaqCommand;
 import com.metaxcrew.acticoreplus.Commands.FlyCommand;
+import com.metaxcrew.acticoreplus.Events.NoBreakEvent;
 import com.metaxcrew.acticoreplus.GUIs.GmGUI;
 import com.metaxcrew.acticoreplus.GUIs.TimeGUI;
 import com.metaxcrew.acticoreplus.License.AdvancedLicense;
@@ -59,6 +60,7 @@ public final class ActiCorePlus extends JavaPlugin {
             //Events
             //getServer().getPluginManager().registerEvents(new MenuGui(), this);
             getServer().getPluginManager().registerEvents(new JoinMessageListener(), this);
+            getServer().getPluginManager().registerEvents(new NoBreakEvent(), this);
             //getServer().getPluginManager().registerEvents(new ChatSystem(), this);
             getServer().getPluginManager().registerEvents(new GmGUI(), this);
             getServer().getPluginManager().registerEvents(new TimeGUI(), this);

@@ -60,7 +60,7 @@ public class TimeGUI implements CommandExecutor, Listener {
                 night.setItemMeta(night_meta);
 
                 ItemMeta midnight_meta = midnight.getItemMeta();
-                night_meta.setDisplayName(ChatColor.of(new Color(54, 45, 179)) + "MIDNIGHT");
+                midnight_meta.setDisplayName(ChatColor.of(new Color(54, 45, 179)) + "MIDNIGHT");
                 ArrayList<String> midnight_lore = new ArrayList<>();
                 midnight_lore.add(ChatColor.of(new Color(130, 139, 147)) + "Change world time to midnight!");
                 midnight_meta.setLore(midnight_lore);
