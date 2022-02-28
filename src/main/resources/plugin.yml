@@ -30,3 +30,6 @@ commands:
   gmsp:
     aliases: [ gm3,gamemode 3 ]
     description: gmsp
+  spawn:
+    aliases: [lobby]
+    description: spawn

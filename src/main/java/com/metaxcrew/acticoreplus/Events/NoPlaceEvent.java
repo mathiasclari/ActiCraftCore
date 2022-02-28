@@ -1,5 +1,5 @@
 package com.metaxcrew.acticoreplus.Events;
-
+/*
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -24,3 +24,4 @@ public class NoPlaceEvent implements Listener {
 
 }
 
+*/

@@ -1,12 +1,13 @@
 package com.metaxcrew.acticoreplus;
 
 import com.metaxcrew.acticoreplus.Commands.*;
-import com.metaxcrew.acticoreplus.Events.NoBreakEvent;
-import com.metaxcrew.acticoreplus.Events.NoPlaceEvent;
+//import com.metaxcrew.acticoreplus.Events.NoBreakEvent;
+//import com.metaxcrew.acticoreplus.Events.NoPlaceEvent;
 import com.metaxcrew.acticoreplus.GUIs.GmGUI;
 import com.metaxcrew.acticoreplus.GUIs.TimeGUI;
 import com.metaxcrew.acticoreplus.License.AdvancedLicense;
 //import com.metaxcrew.acticoreplus.Listeners.ChatSystem;
+import com.metaxcrew.acticoreplus.Listeners.ItemChat;
 import com.metaxcrew.acticoreplus.Listeners.JoinMessageListener;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
@@ -55,6 +56,7 @@ public final class ActiCorePlus extends JavaPlugin {
 
             //Commands
             getCommand("faq").setExecutor(new FaqCommand());
+            getCommand("spawn").setExecutor(new SpawnCommand());
             getCommand("fly").setExecutor(new FlyCommand());
             getCommand("gmc").setExecutor(new CreativeCommand());
             getCommand("gms").setExecutor(new SurvivalCommand());
@@ -63,10 +65,11 @@ public final class ActiCorePlus extends JavaPlugin {
 
             //Events
             getServer().getPluginManager().registerEvents(new JoinMessageListener(), this);
-            getServer().getPluginManager().registerEvents(new NoBreakEvent(), this);
+            //().getPluginManager().registerEvents(new NoBreakEvent(), this);
             getServer().getPluginManager().registerEvents(new GmGUI(), this);
+            getServer().getPluginManager().registerEvents(new ItemChat(), this);
             getServer().getPluginManager().registerEvents(new TimeGUI(), this);
-            getServer().getPluginManager().registerEvents(new NoPlaceEvent(), this);
+           // getServer().getPluginManager().registerEvents(new NoPlaceEvent(), this);
 
 
             //Placeholders
