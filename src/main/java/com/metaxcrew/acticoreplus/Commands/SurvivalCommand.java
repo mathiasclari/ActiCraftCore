@@ -18,7 +18,7 @@ public class SurvivalCommand implements CommandExecutor {
                 p.setGameMode(GameMode.SURVIVAL);
                 p.sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(0, 141, 183)) + "SURVIVAL");
             }else{
-                sender.sendMessage(ChatColor.of(new Color(169, 45, 81)) + "You do not have permission to execute this command!");
+                sender.sendMessage(ChatColor.of(new Color(169, 45, 81)) + "You do not have permission to execute this command! ");
             }
         }
         return true;}

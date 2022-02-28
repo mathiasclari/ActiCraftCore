@@ -33,3 +33,6 @@ commands:
   spawn:
     aliases: [lobby]
     description: spawn
+  profile:
+    aliases: [pf]
+    description: profile
