@@ -36,3 +36,8 @@ commands:
   profile:
     aliases: [pf]
     description: profile
+  store:
+    aliases: [buy, ranks]
+  rules:
+    aliases: [rule]
+  setspawn:

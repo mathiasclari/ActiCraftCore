@@ -1,6 +1,6 @@
 package com.metaxcrew.acticoreplus.Events;
 
-/*import net.md_5.bungee.api.ChatColor;
+import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -24,4 +24,4 @@ public class NoBreakEvent implements Listener {
         }}
 
 }
-*/
+
