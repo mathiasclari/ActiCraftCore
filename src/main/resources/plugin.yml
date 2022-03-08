@@ -8,10 +8,10 @@ depend: [PlaceholderAPI]
 commands:
   gm:
     description: GUI
-    aliases: [gma, gmgui, gamemode]
+    aliases: [gma, gmgui, gamemode, gmanager]
   time:
     description: GUI
-    aliases: [ tm, time, day, night, tmgui]
+    aliases: [ tm, time, day, night, tmgui,tmanager]
   faq:
     aliases: [ FAQ ]
     description: Frequently asked questions
@@ -41,3 +41,5 @@ commands:
   rules:
     aliases: [rule]
   setspawn:
+  wm:
+    aliases: [weather, weathermanager, wmanager]

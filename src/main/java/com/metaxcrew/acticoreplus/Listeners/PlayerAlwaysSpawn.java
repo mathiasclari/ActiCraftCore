@@ -13,9 +13,9 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 
 import java.awt.*;
-
+/*
 public class PlayerAlwaysSpawn implements Listener {
-
+/
     private void FirstSpawn(PlayerJoinEvent e){
         Player p = e.getPlayer();
 
@@ -28,3 +28,4 @@ public class PlayerAlwaysSpawn implements Listener {
         return;}
     }
 }
+*/

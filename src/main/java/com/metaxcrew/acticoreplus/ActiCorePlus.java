@@ -37,13 +37,13 @@ public final class ActiCorePlus extends JavaPlugin {
         AdvancedLicense.ValidationType vt = new AdvancedLicense(this.getConfig().getString("license"), "https://mathiasclari.xyz/license/verify.php", this).isValid();
         if(vt == AdvancedLicense.ValidationType.VALID) {
 
-            Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[]=====================<" + ChatColor.of(new Color(169, 45, 81)) + ChatColor.BOLD + "MetaxCrew" + ChatColor.GRAY + ">=====================[]");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[]=====================<" + ChatColor.of(new Color(169, 45, 81)) + ChatColor.BOLD + "ActiCaft" + ChatColor.GRAY + ">=====================[]");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(0, 141, 183))+"");
-            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Plugin:" + ChatColor.of(new Color(0, 141, 183)) + " ActiCorePlus");
-            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Developer:" + ChatColor.of(new Color(0, 141, 183)) + " Mat");
-            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Discord:" + ChatColor.of(new Color(0, 141, 183)) + " Mat#5000");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Plugin:" + ChatColor.of(new Color(0, 141, 183)) + " ServerCore");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Developer:" + ChatColor.of(new Color(0, 141, 183)) + " PxLb");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Discord:" + ChatColor.of(new Color(0, 141, 183)) + " PxLib#0001");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(0, 141, 183))+"");
-            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Type:" + ChatColor.of(new Color(0, 141, 183)) + " Premium");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Type:" + ChatColor.of(new Color(0, 141, 183)) + " Private");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(0, 141, 183))+"");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Licence:" + ChatColor.of(new Color(41, 255, 84)) + " Valid");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(0, 141, 183))+"");
@@ -84,13 +84,13 @@ public final class ActiCorePlus extends JavaPlugin {
 // licenca narobe
 
             //Startup
-            Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[]=====================<" + ChatColor.of(new Color(169, 45, 81)) + ChatColor.BOLD + "ActiCorePlus" + ChatColor.GRAY + ">=====================[]");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[]=====================<" + ChatColor.of(new Color(169, 45, 81)) + ChatColor.BOLD + "ActiCraft" + ChatColor.GRAY + ">=====================[]");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(0, 141, 183))+"");
-            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Plugin:" + ChatColor.of(new Color(0, 141, 183)) + " DeluxeShop");
-            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Developer:" + ChatColor.of(new Color(0, 141, 183)) + " Mat");
-            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Discord:" + ChatColor.of(new Color(0, 141, 183)) + " Mat#5000");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Plugin:" + ChatColor.of(new Color(0, 141, 183)) + " ServerCore");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Developer:" + ChatColor.of(new Color(0, 141, 183)) + " PxLib");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Discord:" + ChatColor.of(new Color(0, 141, 183)) + " PxLib#0001");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(0, 141, 183))+"");
-            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Type:" + ChatColor.of(new Color(0, 141, 183)) + " Premium");
+            Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Type:" + ChatColor.of(new Color(0, 141, 183)) + " Private");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(0, 141, 183))+"");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(69, 72, 77)) + "    ・ Licence:" + ChatColor.of(new Color(137, 41, 255)) + " UnValid");
             Bukkit.getConsoleSender().sendMessage(ChatColor.of(new Color(0, 141, 183))+"");

@@ -29,7 +29,7 @@ public class TimeGUI implements CommandExecutor, Listener {
             if (player.hasPermission("acti.timegui")){
 
 
-                Inventory TIMESGUI = Bukkit.createInventory(null, 9, ChatColor.of(new Color(69, 72, 77)) + "Time Selector");
+                Inventory TIMESGUI = Bukkit.createInventory(null, 9, ChatColor.of(new Color(69, 72, 77)) + "Time Manager");
 
                 // SetItems
                 ItemStack morning = new ItemStack(Material.YELLOW_STAINED_GLASS, 1);
@@ -110,7 +110,7 @@ public class TimeGUI implements CommandExecutor, Listener {
 
     @EventHandler
     public void GamemodeSelector(InventoryClickEvent event) {
-        if(event.getView().getTitle().equalsIgnoreCase(ChatColor.of(new Color(69, 72, 77)) + "Time Selector") && event.getCurrentItem() != null) {
+        if(event.getView().getTitle().equalsIgnoreCase(ChatColor.of(new Color(69, 72, 77)) + "Time Manager") && event.getCurrentItem() != null) {
 
             if (event.getCurrentItem().getType() == Material.YELLOW_STAINED_GLASS) {
                 if (event.getClick().equals(ClickType.RIGHT) || event.getClick().equals(ClickType.LEFT)) {

@@ -31,7 +31,7 @@ public class GmGUI implements CommandExecutor, Listener {
             if (player.hasPermission("acti.gmgui")){
 
 
-            Inventory GMSLGUI = Bukkit.createInventory(null, 9, ChatColor.of(new Color(69, 72, 77)) + "Gamemode Selector");
+            Inventory GMSLGUI = Bukkit.createInventory(null, 9, ChatColor.of(new Color(69, 72, 77)) + "Gamemode Manager");
 
             // SetItems
             ItemStack gmc = new ItemStack(Material.ORANGE_STAINED_GLASS, 1);
@@ -111,7 +111,7 @@ public class GmGUI implements CommandExecutor, Listener {
 
     @EventHandler
     public void GamemodeSelector(InventoryClickEvent event) {
-        if(event.getView().getTitle().equalsIgnoreCase(ChatColor.of(new Color(69, 72, 77)) + "Gamemode Selector") && event.getCurrentItem() != null) {
+        if(event.getView().getTitle().equalsIgnoreCase(ChatColor.of(new Color(69, 72, 77)) + "Gamemode Manager") && event.getCurrentItem() != null) {
 
             if (event.getCurrentItem().getType() == Material.RED_STAINED_GLASS) {
                 if (event.getClick().equals(ClickType.RIGHT)||event.getClick().equals(ClickType.LEFT)) {
