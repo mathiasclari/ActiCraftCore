@@ -1,4 +1,4 @@
-package com.metaxcrew.acticoreplus.Events;
+/*package com.metaxcrew.acticoreplus.Events;
 
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
@@ -25,3 +25,4 @@ public class NoBreakEvent implements Listener {
 
 }
 
+*/
