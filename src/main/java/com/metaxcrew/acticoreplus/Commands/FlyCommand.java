@@ -23,7 +23,7 @@ public class FlyCommand implements CommandExecutor {
 
                     if (player.isFlying() == false) {
                         player.setAllowFlight(true);
-                        player.sendMessage(ChatColor.of(new Color(130, 139, 147)) + "Flight has been" +ChatColor.of(new Color(0, 141, 183)) + " enabled");
+                        player.sendMessage(ChatColor.of(new Color(172, 191, 208)) + "Flight has been" +ChatColor.of(new Color(0, 141, 183)) + " enabled");
                     }
                 }
             } else {
