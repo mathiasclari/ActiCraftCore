@@ -17,6 +17,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.awt.*;
@@ -26,8 +27,11 @@ import java.io.IOException;
 
 public final class ActiCorePlus extends JavaPlugin {
 
-    public static ActiCorePlus instance;
+    private static ActiCorePlus instance;
     private final YamlConfiguration conf = new YamlConfiguration();
+
+
+
     @Override
     public void onEnable() {
 
@@ -95,5 +99,8 @@ public final class ActiCorePlus extends JavaPlugin {
         @Override
         public void onDisable() {}
 
+    public static ActiCorePlus getInstance() {
+        return instance;
+    }
+
         public YamlConfiguration getConf() { return this.conf; }
-}

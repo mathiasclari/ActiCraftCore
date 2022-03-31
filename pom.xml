@@ -98,6 +98,11 @@
             <version>2.11.1</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>fr.mrmicky</groupId>
+            <artifactId>fastboard</artifactId>
+            <version>1.2.1</version>
+        </dependency>
 
     </dependencies>
 </project>
