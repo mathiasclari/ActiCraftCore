@@ -14,7 +14,7 @@ public class CreativeCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (sender instanceof Player) {
             Player p = (Player) sender;
-            if (p.hasPermission("acti.gamemode")) {
+            if (p.hasPermission("acti.gm")) {
             p.setGameMode(GameMode.CREATIVE);
             p.sendMessage(ChatColor.of(new Color(130, 139, 147)) + "You changed your gamemode to: " + ChatColor.of(new Color(0, 141, 183)) + "CREATIVE");
             }else{
