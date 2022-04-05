@@ -35,7 +35,7 @@ public class ScoreBoard implements Listener {
 
         FastBoard lobbysb = new FastBoard(player);
 
-        lobbysb.updateTitle(ChatColor.of("#0162F5") + "" + ChatColor.BOLD + "ActiCraft");
+        lobbysb.updateTitle(ChatColor.of("#0162F5") + "" + ChatColor.BOLD + "Skyblock Season 1");
 
         this.boards.put(player.getUniqueId(), lobbysb);
 
@@ -61,7 +61,7 @@ public class ScoreBoard implements Listener {
                 ChatColor.of("#4076C9")+""+ChatColor.BOLD + "Flight:",
                 ChatColor.of("#738291") + "» " + ChatColor.of("#709DE0") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%player_allow_flight%"),
                 "",
-                ChatColor.of("#4076C9")+""+ChatColor.BOLD + "MysteryBoxes:",
+                ChatColor.of("#4076C9")+""+ChatColor.BOLD + "Coins:",
                 ChatColor.of("#738291") + "» " + ChatColor.of("#709DE0") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%gadgetsmenu_mystery_boxes%"),
                 "",
                 ChatColor.of("#4076C9")+""+ChatColor.BOLD + "MysteryDust:",

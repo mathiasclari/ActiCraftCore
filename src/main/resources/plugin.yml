@@ -41,5 +41,3 @@ commands:
   rules:
     aliases: [rule]
   setspawn:
-  wm:
-    aliases: [weather, weathermanager, wmanager]
