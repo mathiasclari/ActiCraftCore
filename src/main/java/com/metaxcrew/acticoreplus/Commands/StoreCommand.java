@@ -18,7 +18,7 @@ public class StoreCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
             if(sender instanceof Player){
-                String DiscLink = ActiCorePlus.instance.getConfig().getString("STORE");
+                String DiscLink = ActiCorePlus.getInstance().getConfig().getString("STORE");
                 BaseComponent[] website =
                         new ComponentBuilder("★ ").color(ChatColor.of(new Color(161, 255, 234))).append("STORE: ").color(ChatColor.of(new Color(100, 100, 100)))
                                 .append("Click me").color(ChatColor.of(new Color(173, 173, 173))).bold(true).event(new ClickEvent(ClickEvent.Action.OPEN_URL, DiscLink)).create();

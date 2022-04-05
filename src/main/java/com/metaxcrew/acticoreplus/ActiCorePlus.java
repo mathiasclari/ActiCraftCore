@@ -8,10 +8,11 @@ import com.metaxcrew.acticoreplus.Commands.*;
 import com.metaxcrew.acticoreplus.GUIs.GmGUI;
 import com.metaxcrew.acticoreplus.GUIs.TimeGUI;
 //import com.metaxcrew.acticoreplus.Listeners.ChatSystem;
-import com.metaxcrew.acticoreplus.Listeners.ChatSystem;
+//import com.metaxcrew.acticoreplus.Listeners.ChatSystem;
 import com.metaxcrew.acticoreplus.Listeners.ItemChat;
 import com.metaxcrew.acticoreplus.Listeners.JoinMessageListener;
 import com.metaxcrew.acticoreplus.Listeners.PlayerMessageListener;
+import com.metaxcrew.acticoreplus.ScoreBoards.ScoreBoard;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -72,16 +73,16 @@ public final class ActiCorePlus extends JavaPlugin {
             getCommand("gms").setExecutor(new SurvivalCommand());
             getCommand("gmsp").setExecutor(new SpectatorCommand());
             getCommand("gma").setExecutor(new AdventureCommand());
-            getCommand("setspawn").setExecutor(new SetSpawnCommand());
 
             //Events
             getServer().getPluginManager().registerEvents(new JoinMessageListener(), this);
-            getServer().getPluginManager().registerEvents(new ChatSystem(), this);
+           // getServer().getPluginManager().registerEvents(new ChatSystem(), this);
             //getServer().getPluginManager().registerEvents(new NoBreakEvent(), this);
             getServer().getPluginManager().registerEvents(new GmGUI(), this);
             getServer().getPluginManager().registerEvents(new ItemChat(), this);
             getServer().getPluginManager().registerEvents(new TimeGUI(), this);
-            getServer().getPluginManager().registerEvents(new ChatSystem(), this);
+        getServer().getPluginManager().registerEvents(new ScoreBoard(), this);
+            //getServer().getPluginManager().registerEvents(new ChatSystem(), this);
            // getServer().getPluginManager().registerEvents(new NoPlaceEvent(), this);
 
 
@@ -103,4 +104,4 @@ public final class ActiCorePlus extends JavaPlugin {
         return instance;
     }
 
-        public YamlConfiguration getConf() { return this.conf; }
+        public YamlConfiguration getConf() { return this.conf; }}

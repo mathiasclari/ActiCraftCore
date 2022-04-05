@@ -27,7 +27,7 @@ public class VaultUtils implements Listener {
         vaultEnabled = true;
         RegisteredServiceProvider<Permission> rsp = Bukkit.getServicesManager().getRegistration(Permission.class);
         permission = rsp.getProvider();
-        RegisteredServiceProvider<Chat> chatProvider = ActiCorePlus.instance.getServer().getServicesManager().getRegistration(Chat.class);
+        RegisteredServiceProvider<Chat> chatProvider = ActiCorePlus.getInstance().getServer().getServicesManager().getRegistration(Chat.class);
         if (chatProvider != null) {
             chat = chatProvider.getProvider();
         }

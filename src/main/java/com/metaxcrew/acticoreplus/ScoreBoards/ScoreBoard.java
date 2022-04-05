@@ -35,7 +35,7 @@ public class ScoreBoard implements Listener {
 
         FastBoard lobbysb = new FastBoard(player);
 
-        lobbysb.updateTitle(ChatColor.of("#DA1D1D") + "" + ChatColor.BOLD + "ActiCraft");
+        lobbysb.updateTitle(ChatColor.of("#0162F5") + "" + ChatColor.BOLD + "ActiCraft");
 
         this.boards.put(player.getUniqueId(), lobbysb);
 
@@ -58,17 +58,16 @@ public class ScoreBoard implements Listener {
     private void updateBoard(FastBoard lobbysb) {
         lobbysb.updateLines(
                 "",
-                ChatColor.of("#D54A4A")+""+ChatColor.BOLD + "Personal Stats:",
-                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Fly: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%player_allow_flight%"),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Kills: " + ChatColor.of("#E3BFBF") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Deaths: " + ChatColor.of("#E3BFBF") + lobbysb.getPlayer().getStatistic(Statistic.DEATHS),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Coins: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%vault_eco_balance_fixed%"),
+                ChatColor.of("#4076C9")+""+ChatColor.BOLD + "Rank:",
+                ChatColor.of("#738291") + "» " + ChatColor.of("#709DE0") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%uperms_prefix%"),
                 "",
-                ChatColor.of("#D54A4A")+""+ChatColor.BOLD + "SlimeFun Stats:",
-                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "XP spend: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%slimefun_researches_total_xp_levels_spent%xp"),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#D16666") + "Unlocked: " + ChatColor.of("#E3BFBF") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%slimefun_researches_percentage_researches_unlocked%%"),
+                ChatColor.of("#4076C9")+""+ChatColor.BOLD + "Flight:",
+                ChatColor.of("#738291") + "» " + ChatColor.of("#709DE0") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%player_allow_flight%"),
                 "",
-                ChatColor.of("#DA1D1D") + "" + ChatColor.BOLD + "www.acticraft.net");
+                ChatColor.of("#4076C9")+""+ChatColor.BOLD + "MysteryDust:",
+                ChatColor.of("#738291") + "» " + ChatColor.of("#709DE0") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%gadgetsmenu_mystery_dust%"),
+                "",
+                ChatColor.of("#0162F5") + "" + ChatColor.BOLD + "play.acticraft.net");
 
 
         ;

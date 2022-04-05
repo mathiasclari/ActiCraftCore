@@ -15,7 +15,7 @@ public class PlayerMessageListener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerPlaceholderChat(AsyncPlayerChatEvent event){
-        String format = Colors.toHex(Colors.color(PlaceholderAPI.setPlaceholders(event.getPlayer(), ActiCorePlus.instance.getConf().getString("format", "&7{display_name} &7> {message}").replace("{name}", event.getPlayer().getName()).replace("{display_name}", event.getPlayer().getDisplayName()))));
+        String format = Colors.toHex(Colors.color(PlaceholderAPI.setPlaceholders(event.getPlayer(), ActiCorePlus.getInstance().getConf().getString("format", "&7{display_name} &7> {message}").replace("{name}", event.getPlayer().getName()).replace("{display_name}", event.getPlayer().getDisplayName()))));
         event.setFormat(format.replace("{message}", event.getMessage().replace("%", "‰")));
     }
 
