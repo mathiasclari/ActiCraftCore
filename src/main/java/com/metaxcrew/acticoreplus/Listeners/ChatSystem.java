@@ -13,7 +13,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 import java.awt.*;
-/*
+
 public class ChatSystem implements Listener {
 
 
@@ -24,4 +24,3 @@ public class ChatSystem implements Listener {
     }
 
 }
-*/

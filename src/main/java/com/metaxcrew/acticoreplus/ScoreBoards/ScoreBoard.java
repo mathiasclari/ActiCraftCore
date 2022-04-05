@@ -58,11 +58,11 @@ public class ScoreBoard implements Listener {
     private void updateBoard(FastBoard lobbysb) {
         lobbysb.updateLines(
                 "",
-                ChatColor.of("#4076C9")+""+ChatColor.BOLD + "Rank:",
-                ChatColor.of("#738291") + "» " + ChatColor.of("#709DE0") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%uperms_prefix%"),
-                "",
                 ChatColor.of("#4076C9")+""+ChatColor.BOLD + "Flight:",
                 ChatColor.of("#738291") + "» " + ChatColor.of("#709DE0") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%player_allow_flight%"),
+                "",
+                ChatColor.of("#4076C9")+""+ChatColor.BOLD + "MysteryBoxes:",
+                ChatColor.of("#738291") + "» " + ChatColor.of("#709DE0") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%gadgetsmenu_mystery_boxes%"),
                 "",
                 ChatColor.of("#4076C9")+""+ChatColor.BOLD + "MysteryDust:",
                 ChatColor.of("#738291") + "» " + ChatColor.of("#709DE0") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%gadgetsmenu_mystery_dust%"),
